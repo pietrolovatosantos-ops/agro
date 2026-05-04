@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema AGRO - Gestão de Culturas e Plantações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌾 Sistema AGRO</h1>
+            <p>Gestão de Culturas e Plantações</p>
+        </header>
+
+        <!-- Abas de navegação -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="culturas">Culturas</button>
+            <button class="tab-btn" data-tab="plantacoes">Plantações</button>
+        </nav>
+
+        <!-- Seção de mensagens -->
+        <div id="mensagem" class="mensagem"></div>
+
+        <!-- ABA: CULTURAS -->
+        <div id="culturas" class="tab-content active">
+            <div class="section">
+                <h2>Cadastro de Culturas</h2>
+                <form id="formularioCultura" class="form">
+                    <input type="text" id="cultura_nome" placeholder="Nome da cultura" required>
+                    <textarea id="cultura_descricao" placeholder="Descrição" required></textarea>
+                    <input type="number" id="cultura_ciclo" placeholder="Ciclo em dias" required>
+                    <input type="number" id="cultura_rendimento" placeholder="Rendimento por hectare" step="0.1" required>
+                    <button type="submit" class="btn-primary">Adicionar Cultura</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Culturas Registradas</h2>
+                <div id="listaCulturas" class="lista"></div>
+            </div>
+        </div>
+
+        <!-- ABA: PLANTAÇÕES -->
+        <div id="plantacoes" class="tab-content">
+            <div class="section">
+                <h2>Registro de Plantações</h2>
+                <form id="formularioPlantacao" class="form">
+                    <select id="plantacao_cultura" required>
+                        <option value="">Selecione uma cultura</option>
+                    </select>
+                    <input type="date" id="plantacao_data" required>
+                    <input type="number" id="plantacao_area" placeholder="Área em hectares" step="0.1" required>
+                    <select id="plantacao_status" required>
+                        <option value="">Selecione o status</option>
+                        <option value="planejada">Planejada</option>
+                        <option value="em crescimento">Em crescimento</option>
+                        <option value="colheita">Colheita</option>
+                        <option value="finalizada">Finalizada</option>
+                    </select>
+                    <button type="submit" class="btn-primary">Registrar Plantação</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <h2>Plantações Registradas</h2>
+                <div id="listaPlantacoes" class="lista"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
