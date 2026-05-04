@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Milho",
+    "descricao": "Cereal versátil para alimentação e ração animal",
+    "cicloEmDias": 120,
+    "rendimentoPorHectare": 8.5
+  },
+  {
+    "id": 2,
+    "nome": "Soja",
+    "descricao": "Leguminosa importante para exportação",
+    "cicloEmDias": 135,
+    "rendimentoPorHectare": 2.8
+  },
+  {
+    "id": 3,
+    "nome": "Cana-de-Açúcar",
+    "descricao": "Matéria-prima para açúcar e etanol",
+    "cicloEmDias": 360,
+    "rendimentoPorHectare": 80
+  }
+]

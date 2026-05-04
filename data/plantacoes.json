@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "culturaId": 1,
+    "dataSemeadura": "2026-04-15",
+    "areaEmHectares": 10,
+    "status": "em crescimento"
+  },
+  {
+    "id": 2,
+    "culturaId": 2,
+    "dataSemeadura": "2026-03-20",
+    "areaEmHectares": 15,
+    "status": "colheita"
+  }
+]
