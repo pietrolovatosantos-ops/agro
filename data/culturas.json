@@ -19,5 +19,12 @@
     "descricao": "Matéria-prima para açúcar e etanol",
     "cicloEmDias": 360,
     "rendimentoPorHectare": 80
+  },
+  {
+    "id": 4,
+    "nome": "Trigo",
+    "descricao": "Cereal para farinha",
+    "cicloEmDias": 140,
+    "rendimentoPorHectare": 3.5
   }
 ]
